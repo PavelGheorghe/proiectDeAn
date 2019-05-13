@@ -1,0 +1,162 @@
+/*
+ * It is advised not to edit the smartadmin_production.css
+ * as this will override any changes you make in the 
+ * later versions of this theme. 
+ * 
+ * We advise that you use use this CSS to override 
+ * SmartAdmin styles. 
+ * 
+ * Rename the stylesheet to whatever your liking so it will stay
+ * unique to you with each update of SmartAdmin.
+ */
+
+/*
+ * INDEX
+ * 
+ * - HTML
+ * - BODY
+ * - CUSTOM STYLES
+ */
+
+.smart-style-1 nav ul ul li > a {color: #a4aaae;}
+.bootstrap-select:not([class*=col-]):not([class*=form-control]):not(.input-group-btn){
+    width:100%;
+}
+
+.notvalid {
+
+    border: #A90329 1px solid!important;
+    }
+.setvalid{
+border: #7DC27D 1px solid!important;
+}
+
+
+.smart-form .row {
+    margin: 10px -15px;
+}
+
+.border-left-standard{
+    border-left: 1px solid black;
+    
+}
+.border-right-standard{
+    border-right: 1px solid black;
+}
+
+.bootstrap-select>.dropdown-toggle {
+    position: relative;
+    width: 100%;
+    z-index: 1;
+    text-align: right;
+    white-space: nowrap;
+    height: 32px;
+    border-radius: 0px;
+    border-color: #bdbdbd;
+    padding: 3px;
+}
+.bootstrap-select .dropdown-toggle .filter-option {
+    position: absolute;
+    top: 0;
+    left: 0;
+    padding-top: 0; 
+    padding-right: 0; 
+    padding-bottom: 0; 
+    padding-left: 0; 
+    height: 100%;
+    width: 100%;
+    text-align: left;
+}
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+    overflow: hidden;
+    margin-top: 3px;
+    padding-left: 10px;
+}
+
+.smart-form .label {
+    margin-bottom: 9px;
+  
+}
+.selectpiker-padding {
+    padding-top: 0px;
+    padding-bottom: 10px;
+      
+}
+.bootstrap-select .dropdown-toggle .filter-option-inner-inner {
+    overflow: hidden;
+    margin-top: 3px;
+}
+.input-group .form-control:first-child{
+    height: 29px;
+    
+
+}
+.input-group .form-control:last-child{
+    height: 29px;
+}
+
+.input-group{
+    margin-top: 3px;
+}
+
+.border_standard{
+    border-bottom: 1px solid #DDDDDD;
+    margin-bottom: 20px;
+  }
+  .border-left-standard{
+     border-left: 1px solid #DDDDDD;
+   
+  }
+  .border-right-standard{
+    border-right: 1px solid #DDDDDD;
+  }
+
+.no-background-color{
+    background-color: unset;
+}
+
+  .margin-right-20{
+      margin-right: 20px;
+  }
+  .margin-right-15{
+      margin-right: 15px;
+  }
+  .margin-right-10{
+      margin-right: 10px;
+  }
+  .margin-right-5{
+      margin-right: 5px;
+  }
+
+  .width-100{
+      width:100% !important;
+  }
+
+  .font-500{
+    font-weight: 500
+}
+
+
+.dropzone {
+    min-height: 126px !important;
+}  
+
+.dropzone .dz-preview .dz-error-message {
+    top: 140px;     /* move the tooltip below the "Remove" link */
+}
+.dropzone .dz-preview .dz-error-message:after {
+    left: 20px;     /* move the tooltip's arrow to the left of the "Remove" link */
+    top: -18px;
+    border-bottom-width: 18px;
+}
+.dropzone .dz-preview .dz-details {
+    min-width: unset;
+    width: 80%;
+}
+
+.dropzone .dz-filename span[data-dz-name] {
+    text-overflow: ellipsis;
+    overflow-x: hidden;
+    white-space: nowrap;
+    display: block;
+}

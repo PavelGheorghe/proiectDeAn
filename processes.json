@@ -1,0 +1,11 @@
+{
+    "apps": 
+    [
+        {
+            "name"   : "Assurances Queue",
+            "script": "./queue.sh",
+            "autorestart" : false
+        }
+    ]
+}
+
