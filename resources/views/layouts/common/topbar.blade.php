@@ -1,100 +1,29 @@
-<header id="header">
-	<div id="logo-group">
+   <header class="site-navbar py-4 js-sticky-header site-navbar-target" role="banner">
 
-		<!-- PLACE YOUR LOGO HERE -->
-		<span id="logo" >
-            <a href="/">
-                <img src="/img/logo.png" alt="logo" style="width:140px;"/>
-            </a>
-        </span>
-		<!-- END LOGO PLACEHOLDER -->
+   	<div class="container-fluid">
+   		<div class="d-flex align-items-center">
+   			<div class="site-logo mr-auto w-25"><a href="index.html">Exchenage</a></div>
 
-		<!-- Note: The activity badge color changes when clicked and resets the number to 0
-			 Suggestion: You may want to set a flag when this happens to tick off all checked messages / notifications -->
+   			<div class="mx-auto text-center">
+   				<nav class="site-navigation position-relative text-right" role="navigation">
+   					<ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
+   						<li><a href="#home-section" class="nav-link">Home</a></li>
+   						<li><a href="#courses-section" class="nav-link">Banks</a></li>
+   						<li><a href="#programs-section" class="nav-link">Statistics</a></li>
+   						<li><a href="#teachers-section" class="nav-link">Teachers</a></li>
+   					</ul>
+   				</nav>
+   			</div>
 
-		<!-- AJAX-DROPDOWN : control this dropdown height, look and feel from the LESS variable file -->
-	
-		<!-- END AJAX-DROPDOWN -->
-	</div>
+   			<div class="ml-auto w-25">
+   				<nav class="site-navigation position-relative text-right" role="navigation">
+   					<ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
+   						<li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
+   					</ul>
+   				</nav>
+   				<a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+   			</div>
+   		</div>
+   	</div>
 
-	<!-- #PROJECTS: projects dropdown -->
-
-	<!-- end projects dropdown -->
-
-	<!-- #TOGGLE LAYOUT BUTTONS -->
-	<!-- pulled right: nav area -->
-	<div class="pull-right">
-
-		<!-- collapse menu button -->
-		<div id="hide-menu" class="btn-header pull-right">
-			<span> <a href="javascript:void(0);" data-action="toggleMenu" title="Collapse Menu"><i class="fa fa-reorder"></i></a> </span>
-		</div>
-		<!-- end collapse menu -->
-
-		<!-- #MOBILE -->
-		<!-- Top menu profile link : this shows only when top menu is active -->
-		<ul id="mobile-profile-img" class="header-dropdown-list hidden-xs padding-5">
-			<li class="">
-				<a href="#" class="dropdown-toggle no-margin userdropdown" data-toggle="dropdown"> 
-					<img src="img/avatars/sunny.png" alt="John Doe" class="online" />  
-				</a>
-				<ul class="dropdown-menu pull-right">
-					<li>
-						<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0"><i class="fa fa-cog"></i> Setting</a>
-					</li>
-					<li class="divider"></li>
-					<li>
-						<a href="#ajax/profile.html" class="padding-10 padding-top-0 padding-bottom-0"> <i class="fa fa-user"></i> <u>P</u>rofile</a>
-					</li>
-					<li class="divider"></li>
-					<li>
-						<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0" data-action="toggleShortcut"><i class="fa fa-arrow-down"></i> <u>S</u>hortcut</a>
-					</li>
-					<li class="divider"></li>
-					<li>
-						<a href="javascript:void(0);" class="padding-10 padding-top-0 padding-bottom-0" data-action="launchFullscreen"><i class="fa fa-arrows-alt"></i> Full <u>S</u>creen</a>
-					</li>
-					<li class="divider"></li>
-					<li>
-						<a href="login.html" class="padding-10 padding-top-5 padding-bottom-5" data-action="userLogout"><i class="fa fa-sign-out fa-lg"></i> <strong><u>L</u>ogout</strong></a>
-					</li>
-				</ul>
-			</li>
-		</ul>
-
-		
-		<!-- logout button -->
-		<div id="logouta" class="btn-header transparent pull-right">
-			<span> <a  href="{{ url('/logout') }}" title="Sign Out" data-action="userLogout" data-logout-msg="{{ trans('lang.confirm_logout') }}"><i class="fa fa-sign-out"></i></a> </span>
-			<form id="logout-form" action="{{ url('/logout') }}" method="get" style="display: none;">
-				<input type="hidden" name="_token" value="{{ csrf_token() }}">
-			</form>
-		</div>
-		<!-- end logout button -->
-
-		<!-- fullscreen button -->
-		<div id="fullscreen" class="btn-header transparent pull-right">
-			<span> <a href="javascript:void(0);" data-action="launchFullscreen" title="Full Screen"><i class="fa fa-arrows-alt"></i></a> </span>
-		</div>
-		<!-- end fullscreen button -->
-		<ul class="header-dropdown-list hidden-xs">
-					<li>
-						<a href="#" class="dropdown-toggle" data-toggle="dropdown"> <img src="img/blank.gif" class="flag flag-<?php echo (Session::has('locale') && Session::get('locale')  ? (Session::get('locale') =='it' ?  'it' : 'us' ): 'it') ?>" > <span> <?php echo (Session::has('locale')  ? strtoupper(Session::get('locale')) : 'IT') ?> </span> <i class="fa fa-angle-down"></i> </a>
-						<ul class="dropdown-menu pull-right">
-							<li >
-								<a href="lang/it"><img src="img/blank.gif" class="flag flag-it" alt="Italy"> Italiano</a>
-							</li>	
-							<li>
-								<a href="lang/en"><img src="img/blank.gif" class="flag flag-us" alt="United States"> English</a>
-							</li>
-						
-											
-						</ul>
-					</li>
-				</ul>
-
-
-	</div>
-	<!-- end pulled right: nav area -->
-
-</header>
+   </header>

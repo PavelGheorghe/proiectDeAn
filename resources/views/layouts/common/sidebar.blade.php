@@ -1,48 +1,25 @@
-<aside id="left-panel">
-    
-    <!-- User info -->
-    <div class="login-info">
-        <span> <!-- User image size is adjusted inside CSS, it should stay as is -->
-            
-            <a href="javascript:;" id="show-shortcut" data-action="toggleShortcut" >
-                <img src="img/avatars/sunny.png" alt="me" class="online" />
-                <span>
-                    {{ Auth::user()->first_name }}
-                </span>
-                <!-- <i class="fa fa-angle-down"></i> -->
-            </a>
-            
-        </span>
+<div class="container-fluid">
+    <div class="d-flex align-items-center">
+        <div class="site-logo mr-auto w-25"><a href="index.html">OneSchool</a></div>
+
+        <div class="mx-auto text-center">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+                <ul class="site-menu main-menu js-clone-nav mx-auto d-none d-lg-block  m-0 p-0">
+                    <li><a href="#home-section" class="nav-link">Home</a></li>
+                    <li><a href="#courses-section" class="nav-link">Courses</a></li>
+                    <li><a href="#programs-section" class="nav-link">Programs</a></li>
+                    <li><a href="#teachers-section" class="nav-link">Teachers</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="ml-auto w-25">
+            <nav class="site-navigation position-relative text-right" role="navigation">
+                <ul class="site-menu main-menu site-menu-dark js-clone-nav mr-auto d-none d-lg-block m-0 p-0">
+                    <li class="cta"><a href="#contact-section" class="nav-link"><span>Contact Us</span></a></li>
+                </ul>
+            </nav>
+            <a href="#" class="d-inline-block d-lg-none site-menu-toggle js-menu-toggle text-black float-right"><span class="icon-menu h3"></span></a>
+        </div>
     </div>
-    
-    <nav>
-        <ul>
-            @foreach (config("ctrl.menu") as $menu => $info)
-            <li   @if ($active_menu == $menu) class="active" @endif >
-                @if (count($info['child']) == count($info['child'], COUNT_RECURSIVE)) 
-                   
-                    <a href='{{route($info["url"])}}'>
-                        <i class="fa fa-lg fa-fw {{$info['icon']}}"></i>
-                        <span class="menu-item-parent">{{ trans('lang.' .$menu) }}</span>
-                    </a>
-                  
-                @else
-                <li  @if(in_array($active_menu, array_keys($info['child'])) ) class="active" @endif>
-                    <a href='#'><i class="fa fa-lg fa-fw {{$info['icon']}}"></i> <span class="menu-item-parent">{{ trans('lang.' .$menu) }}</span></a>
-                    <ul>
-                        @foreach ($info['child'] as $menu_item => $info_item)
-                            @permission($info_item['visible-to-permissions'])
-                            <li @if(Request::path() == $menu_item) class="active" @endif>
-                                <a href='{{route($info_item["url"])}}'>{{ trans('lang.' . $menu_item) }}</a>
-                            </li>
-                            @endpermission
-                        @endforeach
-                    </ul>
-                </li>
-                @endif
-            </li>
-            @endforeach
-        </ul>
-    </nav>
-    <span class="minifyme" data-action="minifyMenu"> <i class="fa fa-arrow-circle-left hit"></i> </span>
-</aside>
+</div>

@@ -1,173 +1,75 @@
-	<!-- PAGE FOOTER -->
-		<div class="page-footer">
-			<div class="row">
-				<div class="col-xs-12 col-sm-6">
-					<span class="txt-color-white">{{ config('app.name') }} <span class="hidden-xs">-</span> © 2019</span>
-				</div>
-			</div>
-		</div>
-		<!-- END PAGE FOOTER -->
+    <footer class="footer-section bg-light">
+    	<div class="container">
+    		<div class="row">
+    			<div class="col-md-4">
+    				<h3>About OneSchool</h3>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Porro consectetur ut hic ipsum et veritatis corrupti. Itaque eius soluta optio dolorum temporibus in, atque, quos fugit sunt sit quaerat dicta.</p>
+    			</div>
 
-		<!--================================================== -->
+    			<div class="col-md-3 ml-auto">
+    				<h3>Links</h3>
+    				<ul class="list-unstyled footer-links">
+    					<li><a href="#">Home</a></li>
+    					<li><a href="#">Courses</a></li>
+    					<li><a href="#">Programs</a></li>
+    					<li><a href="#">Teachers</a></li>
+    				</ul>
+    			</div>
 
-		<!-- PACE LOADER - turn this on if you want ajax loading to show (caution: uses lots of memory on iDevices)-->
-		<script data-pace-options='{ "restartOnRequestAfter": true }' src="js/plugin/pace/pace.min.js"></script>
-		<!-- Link to Google CDN's jQuery + jQueryUI; fall back to local -->
-		<script src="http://ajax.googleapis.com/ajax/libs/jquery/2.1.1/jquery.min.js"></script>
-		<script>
-			if (!window.jQuery) {
-				document.write('<script src="js/libs/jquery-2.1.1.min.js"><\/script>');
-			}
-		</script>
-		<script src="http://ajax.googleapis.com/ajax/libs/jqueryui/1.10.3/jquery-ui.min.js"></script>
-		<script>
-			if (!window.jQuery.ui) {
-				document.write('<script src="js/libs/jquery-ui-1.10.3.min.js"><\/script>');
-			}
-		</script>
-		<!-- IMPORTANT: APP CONFIG -->
-		<script src="js/app.config.js"></script>
+    			<div class="col-md-4">
+    				<h3>Subscribe</h3>
+    				<p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt incidunt iure iusto architecto? Numquam, natus?</p>
+    				<form action="#" class="footer-subscribe">
+    					<div class="d-flex mb-5">
+    						<input type="text" class="form-control rounded-0" placeholder="Email">
+    						<input type="submit" class="btn btn-primary rounded-0" value="Subscribe">
+    					</div>
+    				</form>
+    			</div>
 
-		<!-- JS TOUCH : include this plugin for mobile drag / drop touch events-->
-		<script src="js/plugin/jquery-touch/jquery.ui.touch-punch.min.js"></script>
-		<script src="js/plugin/bootstrap-switch/bootstrap-switch.min.js"></script>
-		<script src="/js/plugin/sumoselect/jquery.sumoselect.min.js"></script>
-		<script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
-		
+    		</div>
 
-		<!-- BOOTSTRAP JS -->
-		<script src="js/bootstrap/bootstrap.min.js"></script>
+    		<div class="row pt-5 mt-5 text-center">
+    			<div class="col-md-12">
+    				<div class="border-top pt-5">
+    					<p>
+    						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    						Copyright &copy;<script>
+    							document.write(new Date().getFullYear());
+    						</script> All rights reserved | This template is made with <i class="icon-heart" aria-hidden="true"></i> by <a href="https://colorlib.com" target="_blank">Colorlib</a>
+    						<!-- Link back to Colorlib can't be removed. Template is licensed under CC BY 3.0. -->
+    					</p>
+    				</div>
+    			</div>
 
-		<!-- CUSTOM NOTIFICATION -->
-		<script src="js/notification/SmartNotification.min.js"></script>
-
-		<!-- JARVIS WIDGETS -->
-		<script src="js/smartwidgets/jarvis.widget.min.js"></script>
-
-		<!-- EASY PIE CHARTS -->
-		<script src="js/plugin/easy-pie-chart/jquery.easy-pie-chart.min.js"></script>
-
-		<!-- SPARKLINES -->
-		<script src="js/plugin/sparkline/jquery.sparkline.min.js"></script>
-
-		<!-- JQUERY VALIDATE -->
-		<script src="js/plugin/jquery-validate/jquery.validate.min.js"></script>
-
-		<!-- JQUERY MASKED INPUT -->
-		<script src="js/plugin/masked-input/jquery.maskedinput.min.js"></script>
-
-		<!-- JQUERY SELECT2 INPUT -->
-		<script src="js/plugin/select2/select2.min.js"></script>
-
-		<!-- JQUERY UI + Bootstrap Slider -->
-		<script src="js/plugin/bootstrap-slider/bootstrap-slider.min.js"></script>
-
-		<!-- browser msie issue fix -->
-		<script src="js/plugin/msie-fix/jquery.mb.browser.min.js"></script>
-
-		<!-- FastClick: For mobile devices -->
-		<script src="js/plugin/fastclick/fastclick.min.js"></script>
-		 <script src="js/plugin/jquery_form/jquery.form.js"></script>
-
-		<!--[if IE 8]>
-
-		<h1>Your browser is out of date, please update your browser by going to www.microsoft.com/download</h1>
-
-		<![endif]-->
+    		</div>
+    	</div>
+    </footer>
 
 
 
-		<!-- MAIN APP JS FILE -->
-		<script src="js/app.min.js"></script>
-        <script src="//js.pusher.com/2.2/pusher.min.js"></script>
+    </div> <!-- .site-wrap -->
+    @yield('custom_plugin')
+    <script src="js/jquery-3.3.1.min.js"></script>
+    <script src="js/jquery-migrate-3.0.1.min.js"></script>
+    <script src="js/jquery-ui.js"></script>
+    <script src="js/popper.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/owl.carousel.min.js"></script>
+    <script src="js/jquery.stellar.min.js"></script>
+    <script src="js/jquery.countdown.min.js"></script>
+    <script src="js/bootstrap-datepicker.min.js"></script>
+    <script src="js/jquery.easing.1.3.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/jquery.fancybox.min.js"></script>
+    <script src="js/jquery.sticky.js"></script>
 
-        <!-- ENHANCEMENT PLUGINS : NOT A REQUIREMENT -->
-        <!-- Voice command : plugin -->
-        <script src="js/speech/voicecommand.min.js"></script>
-		<script src="js/plugin/selectpicker/bootstrap-select.js"></script>
-		@yield('custom_plugin')
 
-		<script>
-			$(document).ready(function() {
-				// DO NOT REMOVE : GLOBAL FUNCTIONS!
-				pageSetUp();
-				$.ajaxSetup({
-				   headers: {
-					   'X-CSRF-TOKEN': $('meta[name="csrf-token"]').attr('content')
-				   }
-				});
-				//Display file name for input type file
-                $(document).on('change', '.files', function () {
-                    $path = $(this).val();
-                    $(this).parent().parent().children().eq(0).val($path.replace(/^.*\\/, ""));
-                });
-                //remote modal custom
-				$(document).on("click", ".remote_modal", function (e) {
-					e.preventDefault();
-					$(this).data('#remote_modal', null);// clear modal if has some information from last used 
-					content = $('#remote_modal .modal-content');
-					url = $(this).attr("ajax_target");
-					$.get(url, function (html) {
-						content.html(html);
-						setTimeout(function(){
-							$('#remote_modal').modal({show: true});
-						},500)
-					});
-				});
+    <script src="js/main.js"></script>
 
-				$('#remote_modal').on('hidden', function () {
-					$(this).data('modal', null);
-				});
 
-				$('nav').on('click', function () {
-					localStorage.clear();
-				});
+    @yield('custom_script')
+    <!-- Your GOOGLE ANALYTICS CODE Below -->
+    </body>
 
-				$('.change_lang').click(function () {
-					var new_language = $(this).attr("lang");
-
-					$.get('welcome/changelanguage/', {'language': new_language}, function (data) {
-						location.reload();
-					})
-					return false;
-				});
-				
-				<?php if (isset($errors) && count($errors)): ?>
-					<?php foreach($errors as $error): ?>
-						$.smallBox({
-							title: "<?php echo trans('lang.error'); ?>",
-							content: "<?php echo $error; ?>",
-							color: "#C46A69",
-							icon: "fa fa-warning shake animated",
-							timeout: 6000
-						});
-					<?php endforeach; ?>
-				<?php endif; ?>
-
-				<?php if (isset($success) && count($success)): ?>
-					$.smallBox({
-						title: "<?php echo trans('lang.success'); ?>",
-						content: "<?php echo trans($success[0]); ?>",
-						color: "#739E73",
-						icon: "fa fa-warning swing animated",
-						timeout: 6000
-					});
-				<?php endif; ?>
-				
-					
-				// var pusher = new Pusher('533108ff2bcc333f7bfd');
-
-				// var channel = pusher.subscribe('register_user');
-
-				// channel.bind('App\\Events\\RegisterUserEvent', function(data) {
-				// 	console.log(data)
-				// });
-			});
-
-		</script>
-		
-		@yield('custom_script')
-		<!-- Your GOOGLE ANALYTICS CODE Below -->
-	</body>
-
-</html>
+    </html>
